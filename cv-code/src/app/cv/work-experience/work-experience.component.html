@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="profile-section-title">Experienta profesionala</div>
+            </div>
+        </div>
+        <ng-template ngFor let-el [ngForOf]="workExperience" let-i="index">
+            <app-text-block-with-date [startDate]="el.startDate"
+                                      [endDate]="el.endDate"
+                                      [title]="el.title"
+                                      [contentLines]="el.contentLines"
+            ></app-text-block-with-date>
+            <app-separator *ngIf="i < workExperience.length-1"></app-separator>
+        </ng-template>
+    </div>
+</div>

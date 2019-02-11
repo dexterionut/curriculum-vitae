@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-3 entry-time">
+        <div class="row">
+            <div class="col-md-12">
+                {{ startDate }} -
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span>{{ endDate }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="entry-time">{{ title }}</div>
+        <div *ngFor="let line of contentLines">{{ line }}</div>
+    </div>
+</div>

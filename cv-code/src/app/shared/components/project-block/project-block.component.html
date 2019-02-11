@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-md-3 entry-time">
+        <div class="row">
+            <div class="col-md-12">
+                {{ startDate }} -
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span>{{ endDate }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-12">
+                <span class="entry-time">{{ title }}</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span>
+                    {{ description }}
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span class="text-bold">Tehnologii:</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li *ngFor="let technology of technologies">{{ technology }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

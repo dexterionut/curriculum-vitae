@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="profile-section-title">Limbaje de programare / Framework-uri</div>
+            </div>
+        </div>
+        <ng-template ngFor let-skill [ngForOf]="skills" let-i="index">
+            <app-text-block [title]="skill.title"
+                            [contentLines]="skill.contentLines"
+            ></app-text-block>
+            <app-separator *ngIf="i < skills.length-1"></app-separator>
+        </ng-template>
+    </div>
+</div>

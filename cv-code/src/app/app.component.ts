@@ -8,7 +8,7 @@ import { DataService } from './shared/services/data.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  cvData: ICVData;
+  cvData: ICVData = {} as ICVData;
 
   constructor(private dataService: DataService) {
     this.dataService

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../shared/services/data.service';
+import { Component, Input, OnInit } from '@angular/core';
 import { ITextBlock } from '../../shared/models/text-block';
 
 @Component({
@@ -8,10 +7,9 @@ import { ITextBlock } from '../../shared/models/text-block';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  skills: ITextBlock[];
+  @Input() skills: ITextBlock[];
 
-  constructor(private dataService: DataService) {
-    this.skills = this.dataService.getSkills();
+  constructor() {
   }
 
   ngOnInit() {

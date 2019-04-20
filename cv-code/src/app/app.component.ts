@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ICVData } from './shared/models/data';
+import { DataService } from './shared/services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cv-code';
+  cvData: ICVData;
+
+  constructor(private dataService: DataService) {
+    this.dataService
+      .getCVData()
+      .subscribe(
+        (data: ICVData) => {
+          this.cvData = data;
+        }
+      );
+  }
 }

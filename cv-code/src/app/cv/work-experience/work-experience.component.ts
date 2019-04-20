@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../shared/services/data.service';
+import { Component, Input, OnInit } from '@angular/core';
 import { ITextBlockWithDate } from '../../shared/models/text-block-with-date';
 
 @Component({
@@ -8,10 +7,9 @@ import { ITextBlockWithDate } from '../../shared/models/text-block-with-date';
   styleUrls: ['./work-experience.component.scss']
 })
 export class WorkExperienceComponent implements OnInit {
-  workExperience: ITextBlockWithDate[];
+  @Input() workExperience: ITextBlockWithDate[];
 
-  constructor(private dataService: DataService) {
-    this.workExperience = this.dataService.getWorkExperience();
+  constructor() {
   }
 
   ngOnInit() {

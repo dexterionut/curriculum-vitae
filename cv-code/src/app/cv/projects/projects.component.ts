@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../shared/services/data.service';
+import { Component, Input, OnInit } from '@angular/core';
 import { IProjectBlock } from '../../shared/models/project-block';
 
 @Component({
@@ -8,10 +7,9 @@ import { IProjectBlock } from '../../shared/models/project-block';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  projects: IProjectBlock[];
+  @Input() projects: IProjectBlock[];
 
-  constructor(private dataService: DataService) {
-    this.projects = this.dataService.getProjects();
+  constructor() {
   }
 
   ngOnInit() {

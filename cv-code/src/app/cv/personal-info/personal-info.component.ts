@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../shared/services/data.service';
+import { Component, Input, OnInit } from '@angular/core';
 import { IPersonalInfo } from '../../shared/models/personal-info';
 
 @Component({
@@ -8,10 +7,9 @@ import { IPersonalInfo } from '../../shared/models/personal-info';
   styleUrls: ['./personal-info.component.scss']
 })
 export class PersonalInfoComponent implements OnInit {
-  personalInfo: IPersonalInfo;
+  @Input() personalInfo: IPersonalInfo;
 
-  constructor(private dataService: DataService) {
-    this.personalInfo = this.dataService.getPersonalInfo();
+  constructor() {
   }
 
   ngOnInit() {

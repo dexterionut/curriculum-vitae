@@ -5,6 +5,7 @@ import { SeparatorComponent } from './components/separator/separator.component';
 import { TextBlockWithDateComponent } from './components/text-block-with-date/text-block-with-date.component';
 import { TextBlockComponent } from './components/text-block/text-block.component';
 import { ProjectBlockComponent } from './components/project-block/project-block.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProjectBlockComponent } from './components/project-block/project-block.
   ],
   imports: [
     CommonModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   exports: [
     SeparatorComponent,

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../shared/services/data.service';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-bio',
@@ -7,10 +6,9 @@ import { DataService } from '../../shared/services/data.service';
   styleUrls: ['./bio.component.scss']
 })
 export class BioComponent implements OnInit {
-  bio: string;
+  @Input() bio: string;
 
-  constructor(private dataService: DataService) {
-    this.bio = this.dataService.getBio();
+  constructor() {
   }
 
   ngOnInit() {

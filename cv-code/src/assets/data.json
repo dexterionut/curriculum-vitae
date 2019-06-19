@@ -10,7 +10,7 @@
   "education": [
     {
       "startDate": "2015",
-      "endDate": "Prezent",
+      "endDate": "2019",
       "title": "Facultatea de Matematica si Informatica, Universitatea Bucuresti",
       "contentLines": [
         "Calculatoare si Tehnologia Informatiei"
@@ -26,6 +26,15 @@
     }
   ],
   "workExperience": [
+    {
+      "startDate": "06.2019",
+      "endDate": "Prezent",
+      "title": "Zitec",
+      "contentLines": [
+        "Software Engineer",
+        "Tehnologii: PHP"
+      ]
+    },
     {
       "startDate": "07.2018",
       "endDate": "05.2019",

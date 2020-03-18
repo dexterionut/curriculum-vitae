@@ -9,7 +9,7 @@ h1 {
 
 .entry-time {
   font-weight: bold !important;
-  font-size: 16px !important;
+  font-size: 26px !important;
   color: #263366;
 }
 
@@ -42,15 +42,15 @@ h1 {
 
 @media (min-width: 300px) {
   .entry-time {
-    font-size: 14px !important;
+    font-size: 24px !important;
   }
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Calibri", sans-serif;
   line-height: 1.4;
   color: #555;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 /* ========================================================================
@@ -361,15 +361,15 @@ body {
 }
 
 .text-sm {
-  font-size: 11.9px;
+  font-size: 21.9px;
 }
 
 .text-md {
-  font-size: 26.6px;
+  font-size: 36.6px;
 }
 
 .text-lg {
-  font-size: 42px;
+  font-size: 52px;
 }
 
 .text-nowrap {
@@ -622,7 +622,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   margin: 0 6px 10px 0;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 500;
   color: #ff840b;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);

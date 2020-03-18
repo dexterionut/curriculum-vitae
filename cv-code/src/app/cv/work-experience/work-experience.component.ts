@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ITextBlockWithDate } from '../../shared/models/text-block-with-date';
+import {IWorkExperienceBlock} from '../../shared/models/work-experience-block';
 
 @Component({
   selector: 'app-work-experience',
@@ -7,7 +7,7 @@ import { ITextBlockWithDate } from '../../shared/models/text-block-with-date';
   styleUrls: ['./work-experience.component.scss']
 })
 export class WorkExperienceComponent implements OnInit {
-  @Input() workExperience: ITextBlockWithDate[];
+  @Input() workExperience: IWorkExperienceBlock[];
 
   constructor() {
   }

@@ -1,18 +1,35 @@
 <div class="row">
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="profile-section-title">Proiecte</div>
-            </div>
-        </div>
-        <ng-template ngFor let-project [ngForOf]="projects" let-i="index">
-            <app-project-block [startDate]="project.startDate"
-                               [endDate]="project.endDate"
-                               [title]="project.title"
-                               [description]="project.description"
-                               [technologies]="project.technologies"></app-project-block>
-            <app-separator *ngIf="i < projects.length-1"></app-separator>
-        </ng-template>
-
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="profile-section-title">Projects</div>
+      </div>
     </div>
+    <ng-template ngFor let-project [ngForOf]="projects" let-i="index">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <span class="entry-time">{{ project.title }}</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ul>
+                <li *ngFor="let contentLine of project.contentLines" style="margin-top: 10px;">{{ contentLine }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row" style="margin-left: 10px;">
+            <div class="col-md-12">
+              <b>Utilized:</b> {{ project.utilized }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <app-separator *ngIf="i < projects.length-1"></app-separator>
+    </ng-template>
+
+  </div>
 </div>

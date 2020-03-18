@@ -1,17 +1,32 @@
 <div class="row">
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="profile-section-title">Experienta profesionala</div>
-            </div>
-        </div>
-        <ng-template ngFor let-el [ngForOf]="workExperience" let-i="index">
-            <app-text-block-with-date [startDate]="el.startDate"
-                                      [endDate]="el.endDate"
-                                      [title]="el.title"
-                                      [contentLines]="el.contentLines"
-            ></app-text-block-with-date>
-            <app-separator *ngIf="i < workExperience.length-1"></app-separator>
-        </ng-template>
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="profile-section-title">Work experience</div>
+      </div>
     </div>
+    <ng-template ngFor let-el [ngForOf]="workExperience" let-i="index">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-9 entry-time">
+              {{ el.title }}
+            </div>
+            <div class="col-md-3 entry-time">
+              {{ el.startDate }} - {{ el.endDate }}
+            </div>
+          </div>
+          <div>
+            <ul>
+              <li *ngFor="let contentLine of el.contentLines" style="margin-top: 5px;">{{ contentLine }}</li>
+            </ul>
+          </div>
+          <div style="margin-left: 25px;">
+            <b>Leveraged knowledge in </b> {{ el.leveraged }}
+          </div>
+        </div>
+      </div>
+      <app-separator *ngIf="i < workExperience.length-1"></app-separator>
+    </ng-template>
+  </div>
 </div>

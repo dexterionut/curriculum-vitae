@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ITextBlock } from '../../shared/models/text-block';
+import {ISkills} from '../../shared/models/skills';
 
 @Component({
   selector: 'app-skills',
@@ -7,7 +7,7 @@ import { ITextBlock } from '../../shared/models/text-block';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  @Input() skills: ITextBlock[];
+  @Input() skills: ISkills;
 
   constructor() {
   }

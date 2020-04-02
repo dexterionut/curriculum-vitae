@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-prod": "ng build --prod --base-href https://dexterionut.github.io/curriculum-vitae/ --deployUrl https://dexterionut.github.io/curriculum-vitae/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

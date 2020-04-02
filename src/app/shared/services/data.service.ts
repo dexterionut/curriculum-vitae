@@ -11,6 +11,6 @@ export class DataService {
   }
 
   getCVData() {
-    return this.http.get('/assets/data.json');
+    return this.http.get('./assets/data.json');
   }
 }

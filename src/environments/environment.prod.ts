@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  cvDataUrl: 'https://dexterionut.github.io/curriculum-vitae/assets/data.json'
 };

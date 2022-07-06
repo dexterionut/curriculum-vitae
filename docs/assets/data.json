@@ -27,8 +27,27 @@
   ],
   "workExperience": [
     {
+      "startDate": "09.2020",
+      "endDate": "Present",
+      "title": "Gorgias - Fullstack Software Engineer with Python and React",
+      "contentLines": [
+        "Led a team of 3 people in order to bootstrap a new project of integrating with the BigCommerce API. The 3 people were all new comers and my responsibility was to monitor their progress and help them grow into their roles, impose company wide (but not limited to) coding standards and best practices via code reviews and sync meetings, share the knowledge on the internal code architecture and workflow for adding a new integration.",
+        "Implemented various custom HTTP clients in Python for integrating with different APIs. An HTTP Client was specifically crafted for each individual platform in order to support authentication, requesting and rate limiting of that API and to accommodate for specific data and error structures.",
+        "Helped monitoring our system for degradation or critical errors by using Datadog and Sentry and also by implementing new monitors and taking part in on-call shifts.",
+        "Helped our customers with their technical (but not limited to) questions or problems by taking part in level-3 customer support shifts (technical).",
+        "Implemented new endpoints in our API in order to provide new features to our partners. Wrote documentation based on the OpenAPI Specification for existing and new endpoints of our API.",
+        "Implemented the Two-Factor Authentication using an authenticator app. My responsibility was to conduct a feasibility analysis on what Python and Typescript libraries we should choose, to write the technical specs and implement the feature.",
+        "Added new integration with Twitter and Twitter DMs APIs. My responsibility was to run feasibility analysis on the APIs in order to determine if the features we wanted to achieve were possible and then to implement the features. During the feasibility analysis I discovered that some of the Twitter APIs were under a paywall and helped writing the new scope of the integration with Twitter with this new information in mind. Based on that and I've created the technical specs for the integration and split it into tasks as small as possible in order to easy estimate them.",
+        "Helped rotating secrets/keys for integrations with various APIs after a security breach in Codeconv. The challenge here was that we wanted to achieve this with 0 downtime and I had to adjust the code to work with both old and new secrets/keys for some integrations.",
+        "Fine tuned an inefficient PostgreSQL query which led to significant improvement in latency for a filter.",
+        "Added a new integration for Instagram mentions. My responsibility was to run a feasibility analysis on the Instagram API in order to determine if the features we wanted to achieve were possible and then to implement the feature. Based on the feasibility analysis I've created the technical specs for the integration and split it into tasks as small as possible in order to easy estimate them.",
+        "Improved the QoL of customers by implementing bugfixes and new features on top of the existing integrations with the Facebook, Twitter, Shopify, Magento2, Outlook, Gmail APIs."
+      ],
+      "leveraged": "Python, PostgreSQL, Flask, Rest APIs, Celery, Celery workers, Typescript, React, React functional components, Docker, RabbitMQ, Kubernetes, Google cloud (Kubernetes, PubSub), Terraform, Datadog, Sentry, Gitlab CI/CD"
+    },
+    {
       "startDate": "06.2019",
-      "endDate": "Prezent",
+      "endDate": "08.2020",
       "title": "Zitec - Software Engineer",
       "contentLines": [
         "Helped to design and develop a custom RESTful payment gateway between client's application and PayU System",

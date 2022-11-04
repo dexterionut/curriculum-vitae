@@ -7,6 +7,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SharedModule } from '../shared/shared.module';
+import {LanguagesComponent} from './languages/languages.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SharedModule } from '../shared/shared.module';
     EducationComponent,
     WorkExperienceComponent,
     SkillsComponent,
+    LanguagesComponent,
     ProjectsComponent,
   ],
   imports: [
@@ -27,6 +29,7 @@ import { SharedModule } from '../shared/shared.module';
     EducationComponent,
     WorkExperienceComponent,
     SkillsComponent,
+    LanguagesComponent,
     ProjectsComponent,
   ]
 })

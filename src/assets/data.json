@@ -11,9 +11,10 @@
     {
       "startDate": "2015",
       "endDate": "2019",
-      "title": "Facultatea de Matematica si Informatica, Universitatea Bucuresti",
+      "title": "Computer Science, Faculty of Mathematics and Informatics, University of Bucharest",
       "contentLines": [
-        "Calculatoare si Tehnologia Informatiei"
+        "Bachelor's degree in computer science",
+        "Microservices and analytical systems with applications in the analysis of students' educational performance"
       ]
     },
     {
@@ -85,6 +86,16 @@
     "proficient": "Python, PostgreSQL, Flask, SQLAlchemy, Rest APIs, Celery, Celery workers, Typescript, React, React functional components, Docker, RabbitMQ, Kubernetes, Google cloud (Kubernetes, PubSub), PHP, HTML/CSS/Javascript, SQL, Laravel, Symfony 3/4, Angular 2+, Pandas, Git, Unix",
     "familiar": "Java, C#, Docker, .NET, Spring Boot, Ionic 4, Cordova, Azure Cloud, AWS, Terraform, Datadog, Sentry"
   },
+  "languages": [
+    {
+      "name": "Romanian",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Advanced"
+    }
+  ],
   "projects": [
     {
       "title": "Home automation: Google Home actions to remotely control computer",
